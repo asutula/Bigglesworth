@@ -32,7 +32,7 @@ jobs:
         brew install cartr/qt4/pyqt
         ls -la /usr/local/Cellar/
         echo $PYTHONPATH
-        export PYTHONPATH=$PYTHONPATH:/usr/local/Cellar/pyqt@4
+        export PYTHONPATH=/usr/local/Cellar/pyqt@4:/usr/local/Cellar/qt@4
         echo $PYTHONPATH
         # brew install python
 
