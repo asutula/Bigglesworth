@@ -30,7 +30,8 @@ jobs:
     - name: Install py deps
       run: |
         brew install cartr/qt4/pyqt
-        brew install python
+        ls -la /usr/local/Cellar/pyqt/
+        # brew install python
 
 
     # Runs a single command using the runners shell
