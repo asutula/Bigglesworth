@@ -22,10 +22,16 @@ jobs:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
 
+    - name: Check python version
+      run: |
+        python --version
+        which python
+
     - name: Install py deps
       run: |
         brew install cartr/qt4/pyqt
         brew install python
+
 
     # Runs a single command using the runners shell
     - name: Run BigglesworthApp
