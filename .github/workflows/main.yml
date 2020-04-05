@@ -24,8 +24,8 @@ jobs:
 
     - name: Check python version
       run: |
-        python --version
-        which python
+        python --version | echo
+        which python | echo
 
     - name: Install py deps
       run: |
